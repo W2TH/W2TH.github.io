@@ -55,6 +55,10 @@ footer{
     margin: 2% auto 0.4% auto;
 }
 
+footer p a{
+    color: black;
+}
+
 .Updated{
     text-align: center;
     margin: 0.4% auto 2% auto;
