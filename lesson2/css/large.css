@@ -1,0 +1,16 @@
+@media (min-width: 60em) {
+    
+    #index-content{
+        max-width: 1000px;
+    }
+
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .third-principle{
+        grid-column: 3/4;
+        margin: 1rem;
+        width: auto;
+    }
+}
