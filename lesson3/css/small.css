@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Gentium+Basic&display=swap");
+
+body{
+    background-color: white;
+    font-family: "Gentium Basic", serif;
+}
+
+#index-content{
+    background-color: white;
+    margin: 1.5rem auto;
+    max-width: 760px;
+    border-radius: 8px;
+}
+
+header{
+    background-color: #aba361;
+    border-radius: 8px;
+    padding: 0.1rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.7rem;
+    margin: 0.65rem auto;
+}
+
+.name{
+    font-size: 1.5rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section{
+    border-style: solid;
+    border-color: #aba361;
+    margin: 1rem; 
+}
+
+.first-principle{
+    display: block;
+}
+
+.second-principle{
+    display: block;
+}
+
+.third-principle{
+    display: block;
+}
+
+img{
+    max-width: 100%;
+    width: 35rem;
+}
+
+.principle-heading{
+    background-color: #aba361 ;
+    font-size: 1.3rem;
+    padding: 0.5em;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.company-name{
+    text-align: center;
+}
+
+.link-company{
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+footer{
+    border-radius: 8px;
+    padding: 0.1rem;
+    background-color: #aba361;
+}
+
+footer p a{
+    color: black;
+}
+
+.Updated, .CopyRight{
+    text-align: center;
+    margin: 2% auto;
+}
