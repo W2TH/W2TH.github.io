@@ -109,8 +109,12 @@ footer p a{
     color: black;
 }
 
-.Updated, .CopyRight{
+.Updated{
     text-align: center;
-    margin: 2% auto;
-    padding: 0px;
+    margin: 0.4% auto 2% auto;
+}
+
+.CopyRight{
+    text-align: center;
+    margin: 2% auto 0.4% auto;
 }

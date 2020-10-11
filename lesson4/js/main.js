@@ -8,4 +8,6 @@ let date = new Date();
 let update = document.lastModified;
 
 document.getElementById("CopyRight-year").innerHTML = date.getFullYear();
-document.getElementById("Updated-date").innerHTML = update;
+
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+document.getElementById('Updated-date').innerHTML = new Date().toLocaleDateString('en-gb', options); 
