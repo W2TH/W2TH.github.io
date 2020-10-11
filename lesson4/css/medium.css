@@ -20,4 +20,8 @@
     h1{
         margin: auto;
     }
+
+    footer{
+        font-size: 1rem;
+    }
 }

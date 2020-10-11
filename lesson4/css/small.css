@@ -100,6 +100,7 @@ nav a:hover{
 }
 
 footer{
+    font-size: 0.9rem;
     border-radius: 8px;
     padding: 0.1rem;
     background-color: #aba361;
