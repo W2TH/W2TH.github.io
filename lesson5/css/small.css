@@ -103,7 +103,7 @@ nav a:hover{
 .hero{
     display: grid;
     grid-template-columns: 16rem auto;
-	grid-template-rows: 9.4rem 4.9rem;
+	grid-template-rows: 9.4rem;
 }
 
 .hero img{
@@ -119,7 +119,15 @@ nav a:hover{
 	padding: 10px;
 	background-color: rgba(210, 193, 106,0.6);
 	z-index: 2;
-	
+}
+
+.forecast{
+    display: none;
+}
+
+.article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 footer{
