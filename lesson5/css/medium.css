@@ -26,6 +26,20 @@
         grid-template-rows: 9.4rem 4.9rem;
     }
 
+    .forecast-title{
+        display: block;
+    }
+
+    .forecast{
+        background-color: #d8c09e;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .forecast img{
+        width: 2rem;
+    }
+
     footer{
         font-size: 1rem;
     }

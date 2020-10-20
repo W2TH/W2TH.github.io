@@ -19,7 +19,7 @@ header{
     text-align: center;
     align-items: center;
 	justify-content: center;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 0px;
     padding: 0.1rem;
     border-width: 0.5rem;
 }
@@ -121,11 +121,11 @@ nav a:hover{
 	z-index: 2;
 }
 
-.forecast{
+.forecast, .forecast-title{
     display: none;
 }
 
-.article, .contact{
+.article{
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -146,7 +146,7 @@ nav a:hover{
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    row-gap: 0.9rem;
+    row-gap: 0.05rem;
     padding: 0.6rem;
     background-color: #d8c09e;
 }
@@ -161,7 +161,7 @@ nav a:hover{
 
 footer{
     font-size: 0.9rem;
-    border-radius: 8px;
+    border-radius: 0px 0px 8px 8px;
     padding: 0.1rem;
     background-color: #aba361;
 }
