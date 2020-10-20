@@ -47,6 +47,13 @@ h2{
     margin-bottom: 0px;
 }
 
+h3{
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    margin-bottom: 0px;
+    background-color:  #d3c26a;
+}
+
 nav{
     text-align: center;
     background-color:  #aba361;
@@ -93,13 +100,6 @@ nav a:hover{
     background-color: #d3c26a;
 }
 
-.contentbox {
-    background-color: #d8c09e;
-    border: 100px;
-    padding: .6rem;
-    margin: 1rem;
-}
-
 .hero{
     display: grid;
     grid-template-columns: 16rem auto;
@@ -125,9 +125,38 @@ nav a:hover{
     display: none;
 }
 
-.article{
+.article, .contact{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 0.9rem;
+    padding: 0.6rem;
+    background-color: #d8c09e;
+}
+
+.article img{
+    width: 12rem;
+}
+
+.article p{
+    margin: 0px;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 0.9rem;
+    padding: 0.6rem;
+    background-color: #d8c09e;
+}
+
+.contact img{
+    display: none;
+}
+
+.contact p{
+    margin: 0px;
 }
 
 footer{
