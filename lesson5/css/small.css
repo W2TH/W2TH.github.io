@@ -12,6 +12,18 @@ body{
     border-radius: 8px;
 }
 
+#notification {
+	display: none;
+	padding: 1em;
+	text-align: center;
+	color: black;
+	background-color: #f8b62c;
+}
+
+#notification.show {
+	display: block;
+}
+
 header{
     display: flex;
     flex-direction: column;
