@@ -1,7 +1,7 @@
 WebFont.load({
     google: {
-      families: [
-         'Anton', "Gentium Basic"
-      ]
+        families: [
+            'Anton', "Gentium Basic"
+        ]
     }
-  });
+});
