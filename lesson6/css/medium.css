@@ -23,7 +23,7 @@
 
     .hero{
         grid-template-columns: 16rem auto;
-        grid-template-rows: 9.4rem 4.9rem;
+        grid-template-rows: 9.4rem auto;
     }
 
     .forecast-title{
