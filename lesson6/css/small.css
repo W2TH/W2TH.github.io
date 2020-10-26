@@ -125,6 +125,10 @@ nav a:hover{
 	z-index: 0;
 }
 
+.hero picture img{
+    width: 100%;
+}
+
 #weather-data {
     grid-row: 1/2;
     grid-column: 1/2;
