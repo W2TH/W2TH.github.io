@@ -66,6 +66,11 @@ h3{
     background-color:  #d3c26a;
 }
 
+p{
+    margin-top: 0px;
+    margin-bottom: 0.8rem;
+}
+
 nav{
     text-align: center;
     background-color:  #aba361;
