@@ -118,8 +118,23 @@ nav a:hover{
 }
 
 .image-card{
+    background-color: #d3c26a;
     text-align: center;
+    grid-column: 2/3;
+    border-style: groove;
+    border-color: #aba361;
 }
+
+main{
+    display: grid;
+    grid-template-columns: auto 400px auto;
+    gap: 1.5rem;
+}
+
+picture img{
+    width: 100%;
+}
+
 
 footer{
     font-size: 0.9rem;
