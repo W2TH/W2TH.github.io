@@ -1,0 +1,35 @@
+@media (min-width: 670px) {
+    .navigation{
+        display: flex;
+    }
+    .navigation li{
+        display: block;
+        flex:1 1 100%;
+    }
+    .navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+    }
+    header{
+        flex-direction: row;
+        border-bottom-style: solid;
+        border-bottom-color: #d3c26a;
+    }
+    h1{
+        margin: auto;
+    }
+
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .image-card{
+        grid-column: auto;
+    }
+   
+    footer{
+        font-size: 1rem;
+    }
+}

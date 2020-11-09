@@ -1,0 +1,226 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Anton&family=Gentium+Basic&display=swap");*/
+
+body{
+    background-color: white;
+    font-family: "Gentium Basic", serif;
+}
+
+#index-content{
+    background-color: white;
+    margin: 1.5rem auto;
+    max-width: 1000px;
+    border-radius: 8px;
+}
+
+#notification {
+	display: none;
+	padding: 1em;
+	text-align: center;
+	color: black;
+	background-color: #f8b62c;
+}
+
+#notification.show {
+	display: block;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #aa8439;
+    text-align: center;
+    align-items: center;
+	justify-content: center;
+    border-radius: 0px;
+    padding: 0.1rem;
+    border-width: 0.5rem;
+}
+
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    height: 180px;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.7rem;
+    font-family: "Anton", sans-serif;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.6rem;
+    margin-bottom: 0px;
+}
+
+h3{
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    margin-bottom: 0px;
+    background-color:  #d3c26a;
+}
+
+p{
+    margin-top: 0px;
+    margin-bottom: 0.8rem;
+}
+
+nav{
+    text-align: center;
+    background-color:  #aba361;
+}
+
+.navigation{
+    list-style: none;
+	padding: 0;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation li:first-child{
+    display: block;
+}
+
+.responsive li{
+    display: block;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+nav ul li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+nav a:hover{
+    background-color: #d3c26a;
+}
+
+.active{
+    background-color: #d3c26a;
+}
+/*------- Start Form CSS--------*/
+
+  form fieldset {
+    background-color: #d8c09e;
+	margin: 2rem 0;
+	padding: 1rem 2%;
+	border: 1px solid #aba361;
+	border-radius: 10px;
+  }
+  
+  form legend {
+    background-color:  #d3c26a;
+    border-radius: 10px;
+	padding: 0 0.5rem;
+  }
+  
+  form label.top,
+  form div, textarea {
+	display: block;
+	padding-top: 1rem;
+    font-size: 0.8rem;
+    max-width: 20rem;
+  }
+  
+  form label.top input,
+  form label.top select {
+	-webkit-appearance: none;
+	display: block;
+    width: 100%;
+    max-width: 20rem;
+	font-size: 1rem;
+	padding: 0.75rem;
+	border: 1px solid #aba361;
+	border-radius: 4px;
+	color: #555;
+  }
+  
+  form label.sbs {
+	display: block;
+	padding: 0.75rem 0;
+	color: #555;
+  }
+
+  form input.submit-button {
+	width: 100%;
+	max-width: 20rem;
+	margin: 0.75rem 0 2rem 2%;
+	padding: 0.75rem 1.5rem;
+	border: none;
+	background: #aa8439;
+	border-radius: 1rem;
+  }
+  
+  form input.submit-button:hover {
+	cursor: pointer;
+  }
+  
+  form label.top input:required {
+	border-left: red solid 6px;
+  }
+  
+  form label.top input:required:valid {
+	border-left: green solid 6px;
+  }
+  
+  form textarea {
+	font-family: monospace;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	padding: 1rem;
+	color: black;
+	display: block;
+	width: 100%;
+	height: 15rem;
+  }
+  
+  #currentRating {
+	font-size: 2em;
+  }
+/*------- End Form CSS--------*/
+
+
+
+picture img{
+    width: 100%;
+}
+
+
+footer{
+    font-size: 0.9rem;
+    border-radius: 0px 0px 8px 8px;
+    padding: 0.1rem;
+    background-color: #aba361;
+}
+
+footer p a{
+    color: black;
+}
+
+.Updated{
+    text-align: center;
+    margin: 0.4% auto 2% auto;
+}
+
+.CopyRight{
+    text-align: center;
+    margin: 2% auto 0.4% auto;
+}

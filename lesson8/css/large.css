@@ -1,0 +1,12 @@
+@media (min-width: 60em) {
+    nav ul li a{
+        padding: 0.4rem;
+    }
+
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .image-card:hover {box-shadow: 0 0 50px #333;}
+}
