@@ -145,7 +145,6 @@ form fieldset {
     flex-direction: column;
 	padding-top: 1rem;
     font-size: 0.8rem;
-    
   }
   
   form label.top input,
@@ -198,9 +197,8 @@ form fieldset {
 	height: 15rem;
   }
   
-  #currentRating {
+  #currentRating{
     font-size: 2em;
-    background-color: white;
   }
 /*------- End Form CSS--------*/
 
