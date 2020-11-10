@@ -20,14 +20,6 @@
     h1{
         margin: auto;
     }
-
-    main{
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .image-card{
-        grid-column: auto;
-    }
    
     footer{
         font-size: 1rem;
