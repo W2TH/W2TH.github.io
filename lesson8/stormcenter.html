@@ -41,7 +41,7 @@
                     <legend>Personal Information</legend>
     
                     <label class="top">Full Name*
-                        <input type="text" name="fname" pattern="[A-Za-z]{5,}" placeholder="Full Name" required>
+                        <input type="text" name="fname" pattern="[A-Za-z. -]{5,}" placeholder="Full Name" required>
                     </label>
                     <label class="top">Email
                         <input type="email" name="email" placeholder="you@example.com">
@@ -65,7 +65,7 @@
                             <option value="Tornado">
                         </datalist>
                     </label>
-                    <label class="top">Storm Severity Rating:
+                    <label class="top1">Storm Severity Rating:
                         <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
                             oninput="changeRating(this.value)" onchange="changeRating(this.value)">
                         <span id="currentRating">5</span>

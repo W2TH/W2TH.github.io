@@ -22,3 +22,8 @@ let day = date.getDay();
 if (day == 5) {
     navigation.classList.toggle('show');
 }
+
+//form//
+function changeRating(int) {
+	document.getElementById("currentRating").innerHTML = int;
+}

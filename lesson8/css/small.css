@@ -139,8 +139,7 @@ form fieldset {
 	padding: 0 0.5rem;
   }
   
-  form label.top,
-  form div, textarea {
+  form label.top, form label.top1, form div, textarea {
     display: flex;
     flex-direction: column;
 	padding-top: 1rem;
@@ -159,7 +158,7 @@ form fieldset {
   
   form label.sbs {
 	display: block;
-	padding: 0.25rem 0;
+	padding: 0.75rem 0;
 	color: #555;
   }
 
@@ -190,8 +189,8 @@ form fieldset {
   
   form textarea {
     border-radius: 5px;
-	font-size: 1.5em;
-	line-height: 1.5em;
+	font-size: 1rem;
+	line-height: 1.4rem;
 	padding: 1rem;
 	color: black;
 	height: 15rem;
@@ -199,6 +198,25 @@ form fieldset {
   
   #currentRating{
     font-size: 2em;
+  }
+
+  form label.top1 input{
+    font-size: 1rem;
+	padding: 0px;
+	color: #555;
+  }
+
+  .thanks h1 {
+    font-size: 5em;
+    margin-bottom: 1rem;
+  }
+  
+  .thanks p {
+    text-align: center;
+  }
+
+  .thanks a{
+      color: black;
   }
 /*------- End Form CSS--------*/
 
