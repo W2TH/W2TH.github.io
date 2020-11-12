@@ -1,0 +1,63 @@
+body {
+    font-family: "Gentium Basic", serif;
+    font-size: 1.1rem;
+    text-align: center;   
+}
+
+h1 {
+    font-family: "Anton", sans-serif;
+}
+
+h2{
+    margin-bottom: 0.6rem;
+}
+
+p{
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+section {
+    background-color: #d3c26a;
+    text-align: center;
+    border-style: groove;
+    border-color: #aba361;
+}
+
+img {
+     height:19rem;
+     margin-top: 0.4rem;
+     margin-bottom: 1.1rem;
+}
+
+.cards {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 95%;
+    justify-content: center;
+}
+
+footer {
+  font-weight: bolder; 
+  margin: 1.5rem;
+}
+
+@media only screen and (min-width: 42rem) {
+    body{
+        width: 95%;
+        margin: auto;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+ 
+@media only screen and (min-width: 67rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    img {
+        height:12rem;
+   }
+
+}
