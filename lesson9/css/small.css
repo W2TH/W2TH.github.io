@@ -114,8 +114,9 @@ section, .article, .contact{
 }
 
 h3{
+    font-size: 0.84rem;
     background-color: #d3c26a;
-    margin: 0px 0px 0.6rem 0px;
+    margin: 0px 0px 0.8rem 0px;
 }
 .cards {
     display: grid;
@@ -127,18 +128,17 @@ h3{
 h2{
     background-color: #d3c26a;
     margin: 0px;
+    font-size: 1.9rem;
 }
 
-/* h2.welcome{
-    text-align: center;
-    font-size: 2rem;
-    margin: 1.6rem;
-    margin-bottom: 0px;
-} */
 
-section p{
+p{
     margin-top: 0.4rem;
     margin-bottom: 0.4rem;
+}
+
+.imagen img{
+    width: 19rem;
 }
 
 .article{

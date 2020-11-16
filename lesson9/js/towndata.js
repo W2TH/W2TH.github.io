@@ -12,7 +12,9 @@ fetch(requestURL)
     towns.splice(0,1);*/
     towns = [oldtowns[1],oldtowns[4],oldtowns[5]];
     for (let i = 0; i < towns.length; i++ ) {
-        let card = document.createElement('section');
+        let card = document.createElement('div');
+        let imagen = document.createElement('div');
+        let finalcard = document.createElement('section')
         let h2 = document.createElement('h2');
         let yearFounded = document.createElement('p');
         let population = document.createElement('p');
@@ -42,9 +44,14 @@ fetch(requestURL)
         card.appendChild(yearFounded);
         card.appendChild(population);
         card.appendChild(averageRainfall);
-        card.appendChild(image);
+        imagen.appendChild(image);
+        card.setAttribute('class','information');
+        imagen.setAttribute('class','imagen');
+        finalcard.appendChild(card);
+        finalcard.appendChild(imagen);
   
-        document.querySelector('div.cards').appendChild(card);
+        document.querySelector('div.cards').appendChild(finalcard);
+        finalcard.setAttribute('class','smallcard');
 
       }
 

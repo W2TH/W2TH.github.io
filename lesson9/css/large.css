@@ -1,5 +1,13 @@
-@media (min-width: 60em) {
+@media (min-width: 51em) {
     nav ul li a{
         padding: 0.4rem;
+    }
+
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .smallcard{
+        display: block;
     }
 }
