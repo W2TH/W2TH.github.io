@@ -10,7 +10,7 @@ fetch(requestURL)
     /*towns.splice(6,1);    
     towns.splice(2,2);    
     towns.splice(0,1);*/
-    towns = [oldtowns[1],oldtowns[4],oldtowns[5]];
+    towns = [oldtowns[0],oldtowns[4],oldtowns[5]];
     for (let i = 0; i < towns.length; i++ ) {
         let card = document.createElement('div');
         let imagen = document.createElement('div');
@@ -30,13 +30,13 @@ fetch(requestURL)
         
         if (towns[i].name == "Preston") {
           image.setAttribute('src', src = "images/preston-image.jpg");
-          image.setAttribute('alt', 'Image of Preston');
+          image.setAttribute('alt', 'Image of a wood in Preston');
       } else if (towns[i].name == "Fish Haven") {
           image.setAttribute('src', src = "images/fish-image.jpg");
-          image.setAttribute('alt', 'Image of Fish Haven');
+          image.setAttribute('alt', 'Image of a house in Fish Haven');
       } else {
           image.setAttribute('src', src = "images/soda-image.jpg");
-          image.setAttribute('alt', 'Image of Soda Springs');
+          image.setAttribute('alt', 'Image of a mountain in Soda Springs');
       }
 
         card.appendChild(h2);
