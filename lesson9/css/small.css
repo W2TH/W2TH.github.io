@@ -52,20 +52,6 @@ h1{
     margin-bottom: 0.5rem;
 }
 
-h2{
-    text-align: center;
-    font-size: 2rem;
-    margin: 1.6rem;
-    margin-bottom: 0px;
-}
-
-h3{
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-    margin-bottom: 0px;
-    background-color:  #d3c26a;
-}
-
 /* start code to nav*/
 nav{
     text-align: center;
@@ -121,13 +107,13 @@ nav a:hover{
     width: 100%;
 }
 
-section {
+section, .article, .contact{
     background-color: #d8c09e;
     text-align: center;
     padding: 0px 0px 0.6rem 0px;
 }
 
-section h3{
+h3{
     background-color: #d3c26a;
     margin: 0px 0px 0.6rem 0px;
 }
@@ -138,10 +124,17 @@ section h3{
     justify-content: center;
 }
 
-section h2{
+h2{
     background-color: #d3c26a;
     margin: 0px;
 }
+
+/* h2.welcome{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.6rem;
+    margin-bottom: 0px;
+} */
 
 section p{
     margin-top: 0.4rem;
@@ -149,20 +142,7 @@ section p{
 }
 
 .article{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    row-gap: 0.9rem;
-    padding: 0.6rem;
-    background-color: #d8c09e;
-}
-
-.article img{
-    width: 12rem;
-}
-
-.article p{
-    margin: 0px;
+    margin-top: 1.3rem;
 }
 
 .contact{
@@ -171,6 +151,7 @@ section p{
     justify-items: center;
     row-gap: 0.05rem;
     padding: 0.6rem;
+    margin-top: 1.3rem;
     background-color: #d8c09e;
 }
 

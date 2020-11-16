@@ -26,44 +26,20 @@
         grid-template-rows: 9.4rem auto;
     }
 
-    .forecast-title{
-        display: block;
-    }
-
-    .forecast{
-        background-color: #d8c09e;
+    section{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        column-gap: 1.3rem;
-    }
-
-    .forecast div{
-        display: grid;
-        justify-items: center;
-    }
-    
-    .forecast div:nth-child(1){
-        grid-column: 2;
-    }
-
-    .forecast p{
-        margin-bottom: 0px;
-    }
-
-    .forecast img{
-        width: 100%;
-    }
-
-    .article{
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        column-gap: 1rem;
     }
 
-    .article img{
+    section p{
+        grid-column: 1/2;
+    }
+    section h3{
+        grid-column: 1/2;
+    }
+    section img{
+        grid-row: 1/6;
         grid-column: 2/3;
-        grid-row: 1/2;
-        width: 100%;
     }
 
     .contact p:nth-child(1){
