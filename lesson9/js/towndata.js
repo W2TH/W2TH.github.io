@@ -5,13 +5,11 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    const oldtowns = jsonObject['towns'];
+    const towns = jsonObject['towns'];
 
-    /*towns.splice(6,1);    
-    towns.splice(2,2);    
-    towns.splice(0,1);*/
-    towns = [oldtowns[0],oldtowns[4],oldtowns[5]];
-    for (let i = 0; i < towns.length; i++ ) {
+
+    for (let i = 0; i < towns.length; i++) {
+      if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
         let card = document.createElement('div');
         let imagen = document.createElement('div');
         let finalcard = document.createElement('section')
@@ -27,17 +25,17 @@ fetch(requestURL)
         yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
         averageRainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
         motto.textContent = towns[i].motto;
-        
+
         if (towns[i].name == "Preston") {
           image.setAttribute('src', src = "images/preston-image.jpg");
           image.setAttribute('alt', 'Image of a wood in Preston');
-      } else if (towns[i].name == "Fish Haven") {
+        } else if (towns[i].name == "Fish Haven") {
           image.setAttribute('src', src = "images/fish-image.jpg");
           image.setAttribute('alt', 'Image of a house in Fish Haven');
-      } else {
+        } else {
           image.setAttribute('src', src = "images/soda-image.jpg");
           image.setAttribute('alt', 'Image of a mountain in Soda Springs');
-      }
+        }
 
         card.appendChild(h2);
         card.appendChild(motto);
@@ -45,14 +43,15 @@ fetch(requestURL)
         card.appendChild(population);
         card.appendChild(averageRainfall);
         imagen.appendChild(image);
-        card.setAttribute('class','information');
-        imagen.setAttribute('class','imagen');
+        card.setAttribute('class', 'information');
+        imagen.setAttribute('class', 'imagen');
         finalcard.appendChild(card);
         finalcard.appendChild(imagen);
-  
+
         document.querySelector('div.cards').appendChild(finalcard);
-        finalcard.setAttribute('class','smallcard');
+        finalcard.setAttribute('class', 'smallcard');
 
       }
+    }
 
   });
