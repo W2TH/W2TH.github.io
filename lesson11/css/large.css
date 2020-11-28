@@ -1,0 +1,31 @@
+@media (min-width: 60em) {
+    nav ul li a{
+        padding: 0.4rem;
+    }
+    .name-day{
+        margin-bottom: -1.9rem;
+        font-size: 1.5rem;
+    }
+
+    .day-temperature{
+        margin-top: -2rem;
+        font-size: 1.2rem;
+        
+    }
+
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .smallcard{
+        display: block;
+    }
+    #soda{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .imagen{
+        padding-top: 0px;
+    }
+}

@@ -1,0 +1,138 @@
+@media (min-width: 670px) {
+    .navigation{
+        display: flex;
+    }
+    .navigation li{
+        display: block;
+        flex:1 1 100%;
+    }
+    .navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+    }
+    header{
+        flex-direction: row;
+        border-bottom-style: solid;
+        border-bottom-color: #d3c26a;
+    }
+    h1{
+        margin: auto;
+    }
+
+    .hero{
+        grid-template-columns: 16rem auto;
+        grid-template-rows: 9.4rem auto;
+    }
+
+    /*------------------Start Preston, Soda Spring, and Fish Haven pages------------------*/
+
+    .forecast-title{
+        display: block;
+        margin-top: 0.9rem;
+    }
+
+    #forecast{
+        background-color: #d8c09e;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 0.5rem;
+    }
+
+    #forecast div{
+        display: grid;
+        justify-items: center;
+    }
+    
+    #forecast div:nth-child(1){
+        grid-column: 2;
+    }
+
+    .name-day{
+        margin-bottom: -1.4rem;
+        font-size: 1.2rem;
+    }
+
+    .day-temperature{
+        margin-top: -1.45rem;
+        
+    }
+
+    #forecast img{
+        width: 100%;
+    }
+
+    .article img{
+        float: right;
+        padding-left: 0.625rem;
+        padding-bottom: 0.625rem;
+        padding-right: 0.8rem;
+    }
+    /*------------------Start Preston, Soda Spring, and Fish Haven pages------------------*/
+
+    /*---------------------------------Start Home Page---------------------------------*/
+    
+
+    .cards h2{
+        padding-top: 0.6rem;
+    }
+    
+    .smallcard{
+        display: grid;
+        grid-template-columns: 1fr 50%;
+        padding: 0px;
+    }
+
+    #soda .imagen{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #soda .information{
+        grid-column: 2/3;
+    }
+
+    .imagen img{
+        width: 100%;
+        
+    }
+
+    .imagen{
+        padding: 0.8rem 0.8rem 0.55rem 0.8rem;
+        background-color: #d3c26a;
+        
+    }
+
+    .index-page .cards section{
+        padding-bottom: 0px;
+    }
+
+    
+    /*---------------------------------End Home Page---------------------------------*/
+    .contact{
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        padding: 0.8rem;
+    }
+
+    .map img{
+        display: inline;
+        width: 100%;
+    }
+
+    .map{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+    }
+
+    .contact-information{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
+}
