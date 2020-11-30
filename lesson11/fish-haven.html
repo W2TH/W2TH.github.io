@@ -18,6 +18,7 @@
         <div class="logo"><img src="images/logo-weather-theory.png" alt="Portrait of Daniel Escobedo"></div>
         <div class="name">
             <h1>The Weather Theory</h1>
+            <span class="motto">The Best Weather Site</span>
         </div>
     </header>
     <nav>
@@ -34,12 +35,12 @@
     <div id="index-content">
         <main>
             <section class="soda-page">
-                <h2 class="principal-title">Soda Springs</h2>
+                <h2 class="principal-title">Fish Haven</h2>
                 <div class="hero">
                     <picture>
                         <source media="(min-width: 800px)" srcset="images/fish-hero-large.jpg">
                         <source media="(min-width: 600px)" srcset="images/fish-hero-medium.jpg">
-                        <img src="images/fish-hero-small.jpg" alt="Image of a great valley in Soda Springs">
+                        <img src="images/fish-hero-small.jpg" alt="Image of a house in Soda Springs">
                     </picture>
                     <div id="weather-data">
                         <table>
@@ -81,21 +82,26 @@
 
                 <div class="article">
                     <h2>Best Time of Year to Visit</h2>
-                    <img src="images/preston-article.jpg" alt="Image of a house in winter">
+                    <img src="images/fish-article.jpg" alt="Image of a house in winter">
                     <p>To characterize how pleasant the weather is in Preston throughout the year, we compute two travel
                         scores.<br><br>The first score is the tourism score which favors clear, rainless days with
                         perceived temperatures between
-                        65°F and 80°F. Based on this score, the best time of year to visit Preston for general outdoor
-                        tourist activities is from late June to mid August, with a peak score in the last week of
+                        65°F and 80°F. Based on this score, the best time of year to visit Paris for general outdoor
+                        tourist activities is from early July to mid August, with a peak score in the third week of
                         July.<br><br>The second score is the beach/pool score which favors clear, rainless days with
                         perceived temperatures
-                        between 75°F and 90°F. Based on this score, the best time of year to visit Preston for
-                        hot-weather activities is from early July to mid August, with a peak score in the third week of
+                        between 75°F and 90°F. Based on this score, the best time of year to visit Fish Haven for hot-weather
+                        activities is from early July to mid August, with a peak score in the last week of
                         July.<br><br><a
-                            href="https://weatherspark.com/y/2756/Average-Weather-in-Preston-Idaho-United-States-Year-Round"
+                            href="https://weatherspark.com/y/2755/Average-Weather-in-Paris-Idaho-United-States-Year-Round"
                             target="_blank">Read
                             more about Preston's Weather Patterns on the WeatherSpark website</a>
                     </p>
+
+                </div>
+                <h2 class="events-title">Events That You Cannot Miss</h2>
+
+                <div id="events">
 
                 </div>
 
@@ -108,9 +114,12 @@
                     <p>The Weather Theory</p>
                     <p>Preston, ID 83556</p>
                     <p>theweathertheory@twt.com</p>
-                    <img src="images/facebook-icon.png" alt="Logo of Facebook">
-                    <img src="images/instagram-icon.png" alt="Logo of Instagram">
-                    <img src="images/twitter-icon.png" alt="logo of Twitter">
+                    <a href="https://web.facebook.com/" target="_blank"><img src="images/facebook-icon.png"
+                            alt="Logo of Facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.png"
+                            alt="Logo of Instagram"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="images/twitter-icon.png"
+                            alt="logo of Twitter"></a>
                 </div>
 
                 <div class="map"><img src="images/map-idaho.jpg" alt="Map"></div>
@@ -122,6 +131,11 @@
             <p class="Updated">Current Date: <span id="Updated-date"></span></p>
         </footer>
         <script src="js/weatherAPI.js"></script>
+        <script src="js/events.js"></script>
+        <script>
+            getTownEvents("Fish Haven");
+            getForecastByCoordinates(42.0380399, -111.4048681);
+        </script>
         <script src="js/main.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="js/webfontload.js"></script>

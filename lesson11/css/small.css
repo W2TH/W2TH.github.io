@@ -58,6 +58,11 @@ h3{
     margin: 0px 0px 0.5rem 0px;
 }
 
+.motto{
+    font-family: "Anton", sans-serif;
+    font-size: 1.3rem;
+}
+
 nav{
     text-align: center;
     background-color:  #aba361;
@@ -174,6 +179,16 @@ nav a:hover{
 
 .article img{
     padding-top: 0.8rem;
+    width: auto;
+}
+
+.events-title{
+    margin-top: 0.9rem;
+}
+
+#events{
+    background-color: #d8c09e;
+    padding: 0.8rem;
 }
 /*------------------End Preston, Soda Spring, and Fish Haven pages------------------*/
 
@@ -229,9 +244,131 @@ nav a:hover{
     background-color: #d3c26a;
 }
 
-
 /*---------------------------------End Home Page---------------------------------*/
 
+/*------- Start Form CSS--------*/
+
+#StormCenterForm {
+	margin: 0 auto;
+	width: 100%;
+  }  
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    background-color: #d8c09e;
+	margin: 2rem 0;
+	padding: 1rem 2%;
+	border: 1px solid #aba361;
+	border-radius: 10px;
+  }
+  
+  form legend {
+    background-color:  #d3c26a;
+    border-radius: 10px;
+	padding: 0 0.5rem;
+  }
+  
+  form label.top, form label.top1, form div, textarea {
+    display: flex;
+    flex-direction: column;
+	padding-top: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  form label.top input,
+  form label.top select {
+	-webkit-appearance: none;
+	font-size: 1rem;
+	padding: 0.75rem;
+	border: 1px solid #aba361;
+	border-radius: 5px;
+	color: black;
+  }
+  
+  form label.sbs {
+	display: block;
+	padding: 0.75rem 0;
+	color: black;
+  }
+
+  form input.submit-button {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+	margin: 0 0 2rem 2%;
+	padding: 0.75rem 1.5rem;
+	border: none;
+	background: #aa8439;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  form input.submit-button:hover {
+	cursor: pointer;
+  }
+  
+  form label.top input:required {
+	border-left: red solid 6px;
+  }
+  
+  form label.top input:required:valid {
+	border-left: green solid 6px;
+  }
+  
+  form textarea {
+    border-radius: 5px;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	padding: 1rem;
+	color: black;
+	height: 15rem;
+  }
+  
+  #currentRating{
+    font-size: 2em;
+  }
+
+  form label.top1 input{
+    font-size: 1rem;
+	padding: 0px;
+	color: black;
+  }
+
+  .thanks h1 {
+    font-size: 5em;
+    margin-bottom: 1rem;
+  }
+  
+  .thanks p {
+    text-align: center;
+  }
+
+  .thanks a{
+      color: black;
+  }
+/*------- End Form CSS--------*/
+
+/**/
+.image-card{
+    background-color: #d3c26a;
+    text-align: center;
+    grid-column: 2/3;
+    border-style: groove;
+    border-color: #aba361;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: auto 400px auto;
+    gap: 1.5rem;
+}
+
+.picture-gallery img{
+    width: 100%;
+}
+/**/
 
 .contact{
     padding-bottom: 0.8rem;
@@ -239,11 +376,18 @@ nav a:hover{
     background-color: #d3c26a;
     text-align: left;
     margin: -0.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     
 }
 
 .contact h3{
     background-color: #d3c26a;
+}
+
+.contact-information{
+    grid-column: 2/3;
+    justify-self: center;
 }
 
 .contact-information img{
