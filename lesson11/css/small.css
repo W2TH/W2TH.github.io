@@ -179,7 +179,7 @@ nav a:hover{
 
 .article img{
     padding-top: 0.8rem;
-    width: auto;
+    width: 92.5%;
 }
 
 .events-title{
@@ -351,6 +351,12 @@ form fieldset {
 /*------- End Form CSS--------*/
 
 /**/
+.gallery{
+    display: grid;
+    grid-template-columns: auto 85% auto;
+    gap: 1.5rem;
+}
+
 .image-card{
     background-color: #d3c26a;
     text-align: center;
@@ -359,11 +365,6 @@ form fieldset {
     border-color: #aba361;
 }
 
-.gallery{
-    display: grid;
-    grid-template-columns: auto 400px auto;
-    gap: 1.5rem;
-}
 
 .picture-gallery img{
     width: 100%;
