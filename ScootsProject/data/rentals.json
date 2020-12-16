@@ -1,16 +1,22 @@
 {
-    "scooters": {
-        "one": [
-            "Max.Persons",
+    "data": [
+        [
+            "Max. Persons",
             1,
             2,
             2
         ],
-        "two": [
+        [
             "Reservation (24h)",
             "$30",
             "$40",
             "$50"
+        ],
+        [
+            "Walk-In (24h)",
+            "$35",
+            "$45",
+            "$55"
         ]
-    }
+    ]
 }
