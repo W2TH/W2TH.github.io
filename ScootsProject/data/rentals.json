@@ -1,49 +1,40 @@
 {
     "data": [
         [
-            "Max. Persons",
+            "Honda Metro\nScooter",
             1,
-            2,
-            2
-        ],
-        [
-            "Reservation (24h)",
             "$30",
-            "$40",
-            "$50"
+            "$35"
         ],
         [
-            "Walk-In (24h)",
-            "$35",
-            "$45",
+            "Honda Dio\nScooter",
+            2,
+            "$40",
+            "$45"
+        ],
+        [
+            "Honda PCX150\nScooter",
+            2,
+            "$50",
             "$55"
         ],
         [
-            "Max. Persons",
-            1
-        ],
-        [
-            "Reservation (24h)",
-            "$70"
-        ],
-        [
-            "Walk-In (24h)",
+            "Honda Pioneer\nATV",
+            4,
+            "$70",
             "$80"
         ],
         [
-            "Max. Persons",
+            "Jeep Wrangler\n4 door",
             5,
-            4
-        ],
-        [
-            "Reservation (24h)",
             "$100",
-            "85"
+            "$125"
         ],
         [
-            "Walk-In (24h)",
-            "$125",
-            "$90"
+            "Jeep Wrangler\n2 door",
+            4,
+            "$85",
+            "90"
         ]
     ]
 }
