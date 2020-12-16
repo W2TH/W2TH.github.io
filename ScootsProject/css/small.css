@@ -1,0 +1,297 @@
+/*-------------------start general-------------------*/
+body{
+    background-color: white;
+    font-family: "Gentium Basic", serif;
+}
+
+#index-content{
+    background-color: white;
+    margin: 1.5rem auto;
+    max-width: 1000px;
+    border-radius: 8px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    grid-template-rows: 4rem;
+    background-color: #DF9616;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0px;
+}
+
+.name{
+    display: grid;
+    grid-template-columns: 2.7rem 1fr;
+    grid-template-rows: 4rem;
+}
+
+.name img{
+    height: 3rem;
+    padding: 0.5rem;
+    padding-right: 0px;
+}
+
+.motto{
+    font-family: "Anton", sans-serif;
+    font-size: 2.4rem;
+    color: black;
+    text-decoration: none;
+    grid-column: 2/3;
+    padding-top: 0.65rem;
+}
+
+nav{
+    text-align: center;
+    background-color: #DF9616;
+    grid-column: 1/3;
+}
+
+.menu{
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+    justify-self: end;
+    align-self: center;
+    padding: 5px 8px;
+}
+
+.menu:hover{
+    background-color: #F1C250;
+}
+
+.navigation{
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li {
+	display: none;
+}
+
+.responsive li{
+    display: block;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+nav ul li a{
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+nav a:hover{
+    background-color: #F1C250;
+}
+
+.active{
+    background-color: #F1C250;
+}
+
+footer{
+    margin-top: 1.3rem;
+    font-size: 0.9rem;
+    border-radius: 0px 0px 8px 8px;
+    padding: 0.1rem;
+    background-color: #DF9616;
+}
+
+footer p a{
+    color: black;
+}
+
+.contact{
+    padding: 0.8rem 1rem;
+    background-color: #F1C250;
+    text-align: left;
+    margin: -0.1rem;
+    
+    
+}
+
+h3{
+    background-color: #F1C250;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+.contact-information img{
+    margin-left: 0.8rem;
+    width: 1.5rem;
+}
+
+img.facebook{
+    margin-left: 0px;
+}
+
+.contact p{
+    margin-top: -0.2rem;
+    margin-bottom: 0.35rem
+}
+
+.Updated{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.CopyRight{
+    margin-bottom: 0.5rem;
+    margin-left: 0.9rem;
+}
+
+h2{
+    text-align: left;
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background-color: #DF9616;
+    margin: 0px;
+    font-size: 1.5rem;
+    margin-top: 0.9rem;
+}
+/*-------------------end general-------------------*/
+
+/*-------------------start home-------------------*/
+/*#notification {
+	display: none;
+    padding: 1em;
+	text-align: center;
+	color: white;
+	background-color: rgba(78, 70, 67, 0.4);
+}
+#notification p{
+    margin: 0px;
+}
+
+#notification.show {
+	display: block;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }*/
+
+.hero{
+    display: grid;
+    grid-template-rows: auto 11rem;
+}
+
+.cta{
+    background-color: rgba(78, 70, 67, 0.4);
+    grid-row: 2/3;
+    text-align: center;
+    margin-top: -0.3rem;
+}
+
+h1{
+    line-height: 1.8rem;
+    margin-bottom: 0.7rem;
+}
+
+.cta p{
+    margin-top: 0px;
+    margin-bottom: 1.5rem;
+}
+
+.cta a{
+    font-size: 1.2rem;
+    color: white;
+    background-color: #4E4643;
+    padding: 0.7rem 5rem;
+    text-decoration: none;
+}
+
+.cta a:hover{
+    background-color: rgba(78, 70, 67, 0.2);
+    color:  black;
+    border-style: groove;
+    border-color: rgba(78, 70, 67, 0.4);
+}
+
+.hero picture{
+    width: 100%;	
+}
+
+.hero picture img{
+    width: 100%;
+}
+/*-------------------end home-------------------*/
+
+/*---start forecast----*/
+.big-weather-data{
+    background-color: #F1C250;
+    padding: 0.8rem 1rem;
+}
+
+.forecast-title{
+    margin-top: 0.9rem;
+    margin-bottom: 0px;
+}
+
+.day-forecast, .img-forecast{
+    display: none;
+}
+
+#weather-data{
+    font-size: 1rem;
+    text-align: center;
+    width: 17rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    border-style: groove;
+    border-color: rgba(78, 70, 67, 0.4);
+}
+#weather-data table{
+    text-align: left;
+    display: inline;
+    float: left;
+}
+#currentIcon{
+    width: 7.5rem;
+}
+/*---end forecast----*/
+
+/*-----start rentals----*/
+.rentals{
+    background-color:  #F1C250;
+    padding: 1rem;
+}
+
+.rentals h3{
+    margin-bottom: -1rem;
+    padding-top: 1rem;
+}
+
+.rentals ul{
+    margin-bottom: 0px;
+}
+
+.rentals picture{
+    width: 100%;
+    
+}
+
+.rentals picture img{
+    width: 100%;
+    
+}
+
+/*-----end rentals----*/

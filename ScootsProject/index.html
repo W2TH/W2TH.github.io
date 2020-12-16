@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ~Scoots</title>
+    <meta name="description"
+        content="Home page for ~Scoots website project in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <!--<div id="notification">
+        <span id="warning"></span>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    </div>-->
+    <header>
+        <div class="name">
+
+            <a class="logo" href="index.html"><img src="images/logo-scoots.png" alt="Logo of ~Scoots"></a>
+            <a class="motto" href="index.html">~Scoots</a>
+
+        </div>
+        <a class="menu" href="#">&#9776;</a>
+        <nav>
+            <ul class="navigation">
+
+                <!--<li><a class="active" href="#">Home</a></li>-->
+                <li><a href="rentals.html">RENTALS</a></li>
+                <li><a href="reservations.html">RESERVATIONS</a></li>
+                <li><a href="tours.html">TOURS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="index-content">
+        <main>
+            <div class="hero">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="images/hero-image-large.jpg">
+                    <source media="(min-width: 600px)" srcset="images/hero-image-medium.jpg">
+                    <img src="images/hero-image-small.jpg" alt="Image of Cozumel">
+                </picture>
+                <div class="cta">
+                    <h1>Looking For The Best Vacation Experience?</h1>
+                    <p>Discover the power of renting a vehicle</p>
+                    <a href="reservations.html">Make a Reservation</a>
+                </div>
+            </div>
+            <h2 class="forecast-title">Weather Summary</h2>
+            <div class="big-weather-data">
+                <div id="weather-data">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    <h3 id="currentDay"></h3>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Currently:</td>
+                                <td><span id="currentCondition"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Temperature:</td>
+                                <td><span id="currentTemperature"></span> ºF</td>
+                            </tr>
+                            <tr>
+                                <td>Humidity:</td>
+                                <td><span id="currentHumidity"></span>%</td>
+                            </tr>
+                            <tr>
+                                <td>Wind Speed:</td>
+                                <td><span id="currentWindSpeed"></span> mph</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <img id="currentIcon" alt="Current weather icon">
+                </div>
+                <div class="day-forecast">
+
+                    <h3>3-day Forecast</h3>
+                    <div id="forecast"></div>
+
+                </div>
+                <div class="img-forecast">
+                    <h3>Hourly Forecast</h3>
+                    <img src="images/image-climate-summary.png" alt="Image of precipitation">
+                </div>
+            </div>
+            <h2>Type of Rentals</h2>
+            <div class="rentals">
+                <picture>
+                    <img src="images/home-rentals.jpg" alt="Image of vehicles">
+                </picture>
+                <div>
+                    <h3>Honda Motor Scooters</h3>
+                    <ul>
+                        <li>Honda Metropolitan (49cc) - 1 person</li>
+                        <li>Honda Dio (110cc) - 2 person</li>
+                        <li>Honda PCX150 (149cc) - 2 person</li>
+                    </ul>
+                    <h3>ATV Side-by-Side</h3>
+                    <ul>
+                        <li>Honda Pioneer 1000</li>
+                    </ul>
+
+
+                    <h3>Jeep Rentals</h3>
+                    <ul>
+                        <li>4-door Jeep Wrangler - manual with A/C - 5 people max</li>
+                        <li>2-door Jeep Wrangler - open air - manual - 4 people max</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </main>
+        <footer>
+            <div class="contact">
+                <div class="contact-information">
+                    <h3>Contact Information</h3>
+                    <p>~Scoots</p>
+                    <p>Cozumel, ID 83556</p>
+                    <p>maythescootsbewithyou@twt.com</p>
+                    <a href="https://web.facebook.com/" target="_blank"><img class="facebook"
+                            src="images/facebook-icon.png" alt="Logo of Facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.png"
+                            alt="Logo of Instagram"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="images/twitter-icon.png"
+                            alt="logo of Twitter"></a>
+                </div>
+
+            </div>
+            <p class="CopyRight">&copy; <span id="CopyRight-year"></span> | ~Scoots | Daniel Escobedo Miranda | <a
+                    href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a> | <a
+                    href="resources.html" target="_blank">Resources</a></p>
+            <p class="Updated">Last Updated: <span id="Updated-date"></span></p>
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/webfontload.js"></script>
+        <script src="js/weatherAPI.js"></script>
+    </div>
+
+</body>
+
+</html>

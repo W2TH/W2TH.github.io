@@ -1,0 +1,16 @@
+{
+    "scooters": {
+        "one": [
+            "Max.Persons",
+            1,
+            2,
+            2
+        ],
+        "two": [
+            "Reservation (24h)",
+            "$30",
+            "$40",
+            "$50"
+        ]
+    }
+}
