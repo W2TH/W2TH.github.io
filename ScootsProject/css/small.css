@@ -4,7 +4,8 @@ body{
     font-family: "Gentium Basic", serif;
 }
 
-#index-content{
+#index-content,
+#rentals-content{
     background-color: white;
     margin: 1.5rem auto;
     max-width: 1000px;
@@ -295,3 +296,74 @@ h1{
 }
 
 /*-----end rentals----*/
+
+/*-----start images and table-----*/
+.prices{
+    background-color: #F1C250;
+}
+
+.prices table{
+    background-color: rgba(78, 70, 67, 0.2);
+    margin: 1rem;
+    border-spacing: 0.1rem;
+    font-size: 1.05rem;
+}
+
+.prices table tbody tr:nth-child(even) {
+    background-color: rgba(78, 70, 67, 0.1);
+}
+
+.prices th{
+    width: 5%;
+    background-color: rgba(78, 70, 67, 0.5);
+    border: black;
+    font-weight: bold;
+    
+}
+
+.prices td{
+    text-align: center;
+    padding: 0.5%;
+}
+
+.prices table tfoot {
+    font-size: .8em;
+}
+.small:hover{
+    opacity:0.5;
+  }
+
+.gallery div{
+    width: 100%;
+}
+.gallery div img{
+    width: 100%;
+}
+
+/*
+.gallery{
+    position:relative;
+    display:grid;
+    grid-template-columns:repeat(6,100px);
+    grid-template-rows:repeat(5,100px);
+  }
+  
+  .item{
+    margin:0.2em;
+  }
+  
+
+  
+  .item img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+  }
+  
+  .feature{
+    grid-row: 1 / span 4;
+  grid-column: 1 / span 6;
+    position:relative;
+  }
+
+/*-----end images-----*/
