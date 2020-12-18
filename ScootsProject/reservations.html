@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | ~Scoots</title>
+    <meta name="description"
+        content="Reservations page for ~Scoots website project in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <!--<div id="notification">
+        <span id="warning"></span>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    </div>-->
+    <header>
+        <div class="name">
+
+            <a class="logo" href="index.html"><img src="images/logo-scoots.png" alt="Logo of ~Scoots"></a>
+            <a class="motto" href="index.html">~Scoots</a>
+
+        </div>
+        <a class="menu" href="#">&#9776;</a>
+        <nav>
+            <ul class="navigation">
+
+                <!--<li><a class="active" href="#">Home</a></li>-->
+                <li><a href="rentals.html">RENTALS</a></li>
+                <li><a class="active" href="reservations.html">RESERVATIONS</a></li>
+                <li><a href="tours.html">TOURS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="index-content">
+        <main>
+            <h2>Information and Services</h2>
+            <div class="conditions">
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations</li>
+                    <li>A valid drivers license is required in hand at time of rental</li>
+                    <li>No one under 12 years of age are allowed to ride on the scooters</li>
+                    <li>Fuel charge not included</li>
+                    <li>Unlimited mileage</li>
+                    <li>Liability insurance is free of charge</li>
+                    <li>Reservations rate requires 24 hour prior notification</li>
+                    <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals</li>
+                    <li>Payment via Google Pay, cash, credit card, debit card, or PayPal</li>
+                    <li>Rentals may be returned to either location</li>
+                </ul>
+            </div>
+            <form method="get" action="confirmation.html" id="StormCenterForm">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label class="top">Full Name*
+                        <input type="text" name="fname" pattern="[A-Za-z. -]{5,}" placeholder="Full Name" required>
+                    </label>
+                    <label class="top">Email*
+                        <input type="email" name="email" placeholder="you@example.com" required>
+                    </label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Home State / Country <input type="text" name="country"></label>
+                    <label class="top">Cruise Line (if applicable) <input type="text" name="cruiseline"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rental Information</legend>
+                    <label class="top">Rental Type*
+                        <select name="rentaltype" id="rentaltype">
+                            <option value="">Select Rental Type &#9662;</option>
+                            <option value="metropolitan">Honda Metropolitan</option>
+                            <option value="dio">Honda Dio</option>
+                            <option value="pioneer">Honda Pioneer 1000</option>
+                            <option value="pcx150">Honda PCX150</option>
+                            <option value="jeep4">4-door Jeep Wrangler</option>
+                            <option value="jeep2">2-door Jeep Wrangler</option>
+                        </select>
+                    </label>
+                    <label class="top">Rental Date*
+                        <input type="date" name="rentaldate" required>
+                    </label>
+
+                    <label class="top">Nunmber of Days* <input type="number" name="numberdays" min="1" max="14"
+                            required></label>
+                    <label class="top1">Number of Vehicles*
+                        <input type="range" id="rating" value="1" min="1" max="10" step="1" list="tickmarks"
+                            oninput="changeRating(this.value)" onchange="changeRating(this.value)" required>
+                        <span id="currentRating">1</span>
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                    <label class="top">Drop-off Location*
+                        <select name="region" id="regions">
+                            <option value="">Select Drop-off Location &#9662;</option>
+                            <option value="maya">Terminal Puerta Maya</option>
+                            <option value="carmen">Playa del Carmen</option>
+                        </select>
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label class="top">Comments:<textarea name="comment"></textarea></label>
+                </fieldset>
+
+                <input type="submit" value="Submit" class="submit-button">
+            </form>
+        </main>
+        <footer>
+            <div class="contact">
+                <div class="contact-information">
+                    <h3>Contact Information</h3>
+                    <p>~Scoots</p>
+                    <p>Cozumel, ID 83556</p>
+                    <p>maythescootsbewithyou@twt.com</p>
+                    <a href="https://web.facebook.com/" target="_blank"><img class="facebook"
+                            src="images/facebook-icon.png" alt="Logo of Facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.png"
+                            alt="Logo of Instagram"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="images/twitter-icon.png"
+                            alt="logo of Twitter"></a>
+                </div>
+
+            </div>
+            <p class="CopyRight">&copy; <span id="CopyRight-year"></span> | ~Scoots | Daniel Escobedo Miranda | <a
+                    href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a> | <a
+                    href="resources.html" target="_blank">Resources</a></p>
+            <p class="Updated">Last Updated: <span id="Updated-date"></span></p>
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/webfontload.js"></script>
+        <script src="js/weatherAPI.js"></script>
+    </div>
+
+</body>
+
+</html>
